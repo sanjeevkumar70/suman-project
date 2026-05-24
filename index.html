@@ -242,11 +242,12 @@
 
         /* RESPONSIVE */
 
-        @media(max-width:992px) {
+        @media(max-width:960px) {
 
             .navbar {
                 flex-direction: column;
                 gap: 25px;
+                padding-bottom: 0;
             }
 
             .nav-links {
@@ -256,9 +257,10 @@
             }
 
             .hero-container {
-                flex-direction: column;
+                flex-direction: column-reverse;
                 text-align: center;
-                padding-top: 50px;
+                padding-top: 0;
+                gap: 40px;
             }
 
             .hero-left h1 {
@@ -276,6 +278,17 @@
         }
 
         @media(max-width:576px) {
+            .skill {
+                padding: 10px 14px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .hero-right img {
+                height: 42vh;
+            }
 
             .hero-left h1 {
                 font-size: 42px;
@@ -298,104 +311,103 @@
                 font-size: 22px;
             }
         }
+
         /* SOCIAL SECTION */
 
-.social-wrapper{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
+        .social-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
 
-.social-card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:22px;
-    padding:30px;
+        .social-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 22px;
+            padding: 30px;
 
-    display:flex;
-    align-items:center;
-    gap:25px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
 
-    text-decoration:none;
-    color:#fff;
+            text-decoration: none;
+            color: #fff;
 
-    transition:0.35s ease;
-    backdrop-filter:blur(10px);
-}
+            transition: 0.35s ease;
+            backdrop-filter: blur(10px);
+        }
 
-.social-card:hover{
-    transform:translateY(-8px);
-    border-color:#d6945c;
-    box-shadow:0 15px 40px rgba(0,0,0,0.3);
-}
+        .social-card:hover {
+            transform: translateY(-8px);
+            border-color: #d6945c;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
 
-.social-icon{
-    width:75px;
-    height:75px;
-    border-radius:50%;
+        .social-icon {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    font-size:34px;
-    font-weight:600;
+            font-size: 34px;
+            font-weight: 600;
 
-    background:#d6945c;
-    color:#fff;
-}
+            background: #d6945c;
+            color: #fff;
+        }
 
-.social-text h3{
-    font-size:28px;
-    margin-bottom:8px;
-    color:#d6945c;
-}
+        .social-text h3 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #d6945c;
+        }
 
-.social-text p{
-    color:#ddd;
-    font-size:16px;
-}
+        .social-text p {
+            color: #ddd;
+            font-size: 16px;
+        }
 
-/* BRAND COLORS */
+        /* BRAND COLORS */
 
-.linkedin .social-icon{
-    background:#0077b5;
-}
+        .linkedin .social-icon {
+            background: #0077b5;
+        }
 
-.instagram .social-icon{
-    background:linear-gradient(
-        45deg,
-        #f58529,
-        #dd2a7b,
-        #8134af,
-        #515bd4
-    );
-}
+        .instagram .social-icon {
+            background: linear-gradient(45deg,
+                    #f58529,
+                    #dd2a7b,
+                    #8134af,
+                    #515bd4);
+        }
 
-.twitter .social-icon{
-    background:#111;
-}
+        .twitter .social-icon {
+            background: #111;
+        }
 
-.facebook .social-icon{
-    background:#1877f2;
-}
+        .facebook .social-icon {
+            background: #1877f2;
+        }
 
-/* RESPONSIVE */
+        /* RESPONSIVE */
 
-@media(max-width:768px){
+        @media(max-width:768px) {
 
-    .social-wrapper{
-        grid-template-columns:1fr;
-    }
+            .social-wrapper {
+                grid-template-columns: 1fr;
+            }
 
-    .social-card{
-        padding:24px;
-    }
+            .social-card {
+                padding: 24px;
+            }
 
-    .social-text h3{
-        font-size:24px;
-    }
-}
+            .social-text h3 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
@@ -419,7 +431,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <a href="tel:+9546691969" class="talk-btn">
+            <a href="tel:+91-9546691969" class="talk-btn">
                 Let's Talk
             </a>
 
@@ -447,8 +459,7 @@
             </div>
 
             <div class="hero-right">
-                <img src="./suman-img.png"
-                    alt="">
+                <img src="./suman-img.png" alt="">
             </div>
 
         </div>
@@ -573,47 +584,48 @@
     </section>
     <!-- SOCIAL SECTION -->
 
-<section id="social">
+    <section id="social">
 
-    <h2 class="section-title">Social Media</h2>
+        <h2 class="section-title">Social Media</h2>
 
-    <div class="social-wrapper">
+        <div class="social-wrapper">
 
-        <a href="https://www.linkedin.com/in/suman-kumar-35a186217/" target="_blank" class="social-card linkedin">
-            <div class="social-icon">in</div>
-            <div class="social-text">
-                <h3>LinkedIn</h3>
-                <p>Professional Network</p>
-            </div>
-        </a>
+            <a href="https://www.linkedin.com/in/suman-kumar-35a186217/" target="_blank" class="social-card linkedin">
+                <div class="social-icon">in</div>
+                <div class="social-text">
+                    <h3>LinkedIn</h3>
+                    <p>Professional Network</p>
+                </div>
+            </a>
 
-        <a href="https://www.instagram.com/_s.uman_kumar_?igsh=azV0dHBqZmR4aTY0" target="_blank" class="social-card instagram">
-            <div class="social-icon">◎</div>
-            <div class="social-text">
-                <h3>Instagram</h3>
-                <p>Daily Updates & Photos</p>
-            </div>
-        </a>
+            <a href="https://www.instagram.com/_s.uman_kumar_?igsh=azV0dHBqZmR4aTY0" target="_blank"
+                class="social-card instagram">
+                <div class="social-icon">◎</div>
+                <div class="social-text">
+                    <h3>Instagram</h3>
+                    <p>Daily Updates & Photos</p>
+                </div>
+            </a>
 
-        <a href="https://x.com/RajwatSuman" target="_blank" class="social-card twitter">
-            <div class="social-icon">𝕏</div>
-            <div class="social-text">
-                <h3>X (Twitter)</h3>
-                <p>Latest Thoughts & Posts</p>
-            </div>
-        </a>
+            <a href="https://x.com/RajwatSuman" target="_blank" class="social-card twitter">
+                <div class="social-icon">𝕏</div>
+                <div class="social-text">
+                    <h3>X (Twitter)</h3>
+                    <p>Latest Thoughts & Posts</p>
+                </div>
+            </a>
 
-        <a href="https://www.facebook.com/share/1HCu3QjsXv/" target="_blank" class="social-card facebook">
-            <div class="social-icon">f</div>
-            <div class="social-text">
-                <h3>Facebook</h3>
-                <p>Connect With Me</p>
-            </div>
-        </a>
+            <a href="https://www.facebook.com/share/1HCu3QjsXv/" target="_blank" class="social-card facebook">
+                <div class="social-icon">f</div>
+                <div class="social-text">
+                    <h3>Facebook</h3>
+                    <p>Connect With Me</p>
+                </div>
+            </a>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 </body>
 
