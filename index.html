@@ -240,81 +240,6 @@
             text-decoration: none;
         }
 
-        /* RESPONSIVE */
-
-        @media(max-width:960px) {
-
-            .navbar {
-                flex-direction: column;
-                gap: 25px;
-                padding-bottom: 0;
-            }
-
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .hero-container {
-                flex-direction: column-reverse;
-                text-align: center;
-                padding-top: 0;
-                gap: 40px;
-            }
-
-            .hero-left h1 {
-                font-size: 55px;
-            }
-
-            .hero-right img {
-                width: 380px;
-                margin-top: 40px;
-            }
-
-            .section-title {
-                font-size: 40px;
-            }
-        }
-
-        @media(max-width:576px) {
-            .social-icon{
-                width: 62px;
-                height: 62px;
-            }
-            .skill {
-                padding: 10px 14px;
-            }
-
-            .card {
-                padding: 25px;
-            }
-
-            .hero-right img {
-                height: 42vh;
-            }
-
-            .hero-left h1 {
-                font-size: 42px;
-            }
-
-            .work-btn {
-                padding: 18px 40px;
-                font-size: 18px;
-            }
-
-            .talk-btn {
-                padding: 14px 35px;
-            }
-
-            .section-title {
-                font-size: 34px;
-            }
-
-            .card h3 {
-                font-size: 22px;
-            }
-        }
 
         /* SOCIAL SECTION */
 
@@ -398,8 +323,43 @@
 
         /* RESPONSIVE */
 
+        @media(max-width:960px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 25px;
+                padding-bottom: 0;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .hero-container {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 0;
+                gap: 40px;
+            }
+
+            .hero-left h1 {
+                font-size: 55px;
+            }
+
+            .hero-right img {
+                width: 380px;
+                margin-top: 40px;
+            }
+
+            .section-title {
+                font-size: 40px;
+            }
+        }
+
         @media(max-width:768px) {
-            
+
 
             .social-wrapper {
                 grid-template-columns: 1fr;
@@ -411,6 +371,46 @@
 
             .social-text h3 {
                 font-size: 24px;
+            }
+        }
+
+        @media(max-width:576px) {
+            .social-icon {
+                width: 62px;
+                height: 62px;
+            }
+
+            .skill {
+                padding: 10px 14px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .hero-right img {
+                height: 42vh;
+            }
+
+            .hero-left h1 {
+                font-size: 42px;
+            }
+
+            .work-btn {
+                padding: 18px 40px;
+                font-size: 18px;
+            }
+
+            .talk-btn {
+                padding: 14px 35px;
+            }
+
+            .section-title {
+                font-size: 34px;
+            }
+
+            .card h3 {
+                font-size: 22px;
             }
         }
     </style>
@@ -605,7 +605,22 @@
 
             <a href="https://www.instagram.com/_s.uman_kumar_?igsh=azV0dHBqZmR4aTY0" target="_blank"
                 class="social-card instagram">
-                <div class="social-icon">◎</div>
+                <div class="social-icon">
+                    <!-- INSTAGRAM ICON -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+
+                        <path d="M16 11.37a4 4 0 1 1-7.75 1.27 
+                 4 4 0 0 1 7.75-1.27z"></path>
+
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+
+                    </svg>
+
+                </div>
                 <div class="social-text">
                     <h3>Instagram</h3>
                     <p>Daily Updates & Photos</p>
